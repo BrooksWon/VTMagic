@@ -47,6 +47,6 @@ blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 // tabbar高度
 #define VTTABBAR_HEIGHT (49)
 // 状态栏高度
-#define VTSTATUSBAR_HEIGHT (CGSizeEqualToSize(CGSizeMake(375.f, 812.f), [UIScreen mainScreen].bounds.size) ? 24 : 20)
+#define VTSTATUSBAR_HEIGHT ([UIScreen mainScreen].bounds.size.height >= 812.f ? 44 : 20)
 
 #endif
